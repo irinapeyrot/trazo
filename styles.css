@@ -12,7 +12,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Space Grotesk', sans-serif;
-  background: var(--white);
+  background: var(--hero-bg);
   color: var(--ink);
   overflow-x: hidden;
   cursor: crosshair;
