@@ -293,7 +293,7 @@ z-index: 2;
 }
 
 /* ── CONTACTO ── */
-#contacto { background: transparent; padding: 3rem 1.5rem 4rem; }
+#contacto { background: white; padding: 3rem 1.5rem 4rem; }
 .contacto-inner { max-width: 1000px; margin: 0 auto; }
 .contacto-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: start; }
 @media (min-width: 720px) { .contacto-grid { grid-template-columns: 1fr 1fr; } }
