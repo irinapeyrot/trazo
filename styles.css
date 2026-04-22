@@ -333,7 +333,7 @@ z-index: 2;
 
 /* ── FOOTER ── */
 footer {
-  background: white; border-top: 1px solid rgba(0,0,0,0.08);
+  background: black; border-top: 1px solid rgba(0,0,0,0.08);
   padding: 1.2rem; text-align: center;
 }
 footer p { font-size: 0.55rem; letter-spacing: 0.14em; color: var(--gray); line-height: 2.2; font-weight: 500; }
