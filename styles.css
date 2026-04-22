@@ -346,7 +346,7 @@ footer p { font-size: 0.55rem; letter-spacing: 0.14em; color: var(--gray); line-
   .nav-links { display: none; }
   .burger { display: flex; }
   .nosotras-content {
-    background: var(--hero-bg);
+    background: transparent;
     margin-top: 0;
     margin-bottom: 3rem;}
   .papel-after-svc {
