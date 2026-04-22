@@ -348,12 +348,18 @@ footer p { font-size: 0.55rem; letter-spacing: 0.14em; color: var(--gray); line-
   .nosotras-content {
     background: var(--hero-bg);
     margin-top: 0;
-    margin-bottom: 3rem;}
+    margin-bottom: 3rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;}
   .papel-after-svc {
     margin-top: -300px;
     background: transparent;}
   #faqs {
     margin-top: -100px;}
+  .teal-asterisk {
+    font-family: 'Space Grotesk', sans-serif;  }
+  .teal-asterisk::after {
+    content: '\FE0E';}
 }
 
 @media (min-width: 641px) {
