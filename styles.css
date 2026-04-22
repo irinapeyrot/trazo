@@ -19,7 +19,7 @@ body {
   text-transform: uppercase;
 }
 
-/* ── NAV ── */
+/* ── NAVEGACIÓN ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   display: flex; justify-content: flex-end; align-items: center;
@@ -50,7 +50,7 @@ nav {
 }
 .mobile-menu a:hover { color: var(--teal); }
 
-/* ── SHARED ── */
+/* ── GENERAL ── */
 .section-heading {
   font-size: clamp(1.8rem, 5.5vw, 3.2rem); font-weight: 700;
   letter-spacing: 0.08em; color: var(--teal);
@@ -72,7 +72,7 @@ nav {
 .flip-y  img { transform: scaleY(-1); }
 .flip-xy img { transform: scale(-1,-1); }
 
-/* AL REDEDOR DE CIUDAD */
+/* ALREDEDOR DE CIUDAD */
 .papel-above-skyline {
   z-index: 2;
   margin-top: -45vw;
@@ -338,7 +338,7 @@ footer {
 }
 footer p { font-size: 0.55rem; letter-spacing: 0.14em; color: var(--gray); line-height: 2.2; font-weight: 500; }
 
-/* ── REVEAL ── */
+/* ── ANIMACIÓN ── */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 
@@ -357,26 +357,32 @@ footer p { font-size: 0.55rem; letter-spacing: 0.14em; color: var(--gray); line-
 @media (min-width: 641px) {
   .burger { display: none; }
   .mobile-menu { display: none !important; }
-  #inicio {
-    padding-bottom: 100px;
-  }
-  .servicios-content {
-    padding-top: 5rem;
-    padding-bottom: 0rem;
-  }
-  #servicios {
-    background:var(--hero-bg)
-  }
-   #faqs {
-    background:var(--hero-bg)
-  }
-  .papel-after-svc {
-    background: var(--hero-bg)
-  }
-  .video-wrap {
-    display: block;
-    position: relative;
-    z-index: 10;
-    margin-top: -1001px;
-  }
-}  
+
+  /* ── HERO ── */
+  #inicio { padding-bottom: 0; }
+
+  /* ROTACIÓN: Que no se fusione con la cinta oscura */
+  .tape-badge-row { padding-right: clamp(4rem, 10vw, 8rem); }
+  .badge-circle { right: clamp(3rem, 8vw, 6rem); }
+
+  /* ── PAPEL / CIUDAD ── */
+  .papel-above-skyline { margin-top: 0; margin-bottom: -18vw; }
+  .papel-below-skyline { margin-top: -20vw; }
+
+  /* ── NOSOTRAS ──*/
+  #nosotras { margin-top: -40vw; }
+  .nosotras-content { margin-top: 0; padding-top: 6vw; padding-bottom: 6vw; }
+
+  /* ── SERVICIOS ── */
+  #servicios { background: var(--hero-bg); margin-top: 0; }
+  .servicios-content { padding-top: 5rem; padding-bottom: 3rem; }
+
+  /* ── PAPEL AFTER SERVICIOS ── */
+  .papel-after-svc { background: var(--hero-bg); margin-top: -6vw; max-height: 55vw; overflow: hidden; }
+
+  /* ── VIDEO ── */
+  .video-wrap { display: block; position: relative; z-index: 10; margin-top: -15vw; }
+
+  /* ── FAQS ── */
+  #faqs { background: var(--hero-bg); position: relative; z-index: 11; margin-top: 0; padding-top: 3rem; }
+}
