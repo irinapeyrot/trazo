@@ -379,6 +379,7 @@ footer p { font-size: 0.55rem; letter-spacing: 0.14em; color: var(--gray); line-
   #servicios { position: relative; z-index: 10; background: transparent; margin-top: 0; }
   .servicios-content { padding-top: 5rem; padding-bottom: 3rem; }
   .svc-tape-row { position: relative; z-index: 10; }
+  #servicios .section-heading { text-align: right; display: block; }
 
   /* Papel después de servicios */
   .papel-after-svc { background: var(--hero-bg); margin-top: -6vw; max-height: 55vw; overflow: hidden; }
