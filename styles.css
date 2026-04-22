@@ -19,7 +19,7 @@ body {
   text-transform: uppercase;
 }
 
-/* ── NAVEGACIÓN ── */
+/* ── NAV ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   display: flex; justify-content: flex-end; align-items: center;
@@ -50,7 +50,7 @@ nav {
 }
 .mobile-menu a:hover { color: var(--teal); }
 
-/* ── GENERAL ── */
+/* ── SHARED ── */
 .section-heading {
   font-size: clamp(1.8rem, 5.5vw, 3.2rem); font-weight: 700;
   letter-spacing: 0.08em; color: var(--teal);
@@ -72,7 +72,7 @@ nav {
 .flip-y  img { transform: scaleY(-1); }
 .flip-xy img { transform: scale(-1,-1); }
 
-/* ALREDEDOR DE CIUDAD */
+/* AL REDEDOR DE CIUDAD */
 .papel-above-skyline {
   z-index: 2;
   margin-top: -45vw;
@@ -293,7 +293,7 @@ z-index: 2;
 }
 
 /* ── CONTACTO ── */
-#contacto { background: var(--hero-bg); padding: 3rem 1.5rem 4rem; }
+#contacto { background: transparent; padding: 3rem 1.5rem 4rem; }
 .contacto-inner { max-width: 1000px; margin: 0 auto; }
 .contacto-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: start; }
 @media (min-width: 720px) { .contacto-grid { grid-template-columns: 1fr 1fr; } }
@@ -333,7 +333,7 @@ z-index: 2;
 
 /* ── FOOTER ── */
 footer {
-  background: var(--white); border-top: 1px solid rgba(0,0,0,0.08);
+  background: var(--hero-bg); border-top: 1px solid rgba(0,0,0,0.08);
   padding: 1.2rem; text-align: center;
 }
 footer p { font-size: 0.55rem; letter-spacing: 0.14em; color: var(--gray); line-height: 2.2; font-weight: 500; }
@@ -358,31 +358,34 @@ footer p { font-size: 0.55rem; letter-spacing: 0.14em; color: var(--gray); line-
   .burger { display: none; }
   .mobile-menu { display: none !important; }
 
-  /* ── HERO ── */
+  /* HERO */
   #inicio { padding-bottom: 0; }
 
-  /* ROTACIÓN: Que no se fusione con la cinta oscura */
+  /* Badge */
   .tape-badge-row { padding-right: clamp(4rem, 10vw, 8rem); }
   .badge-circle { right: clamp(3rem, 8vw, 6rem); }
 
-  /* ── PAPEL / CIUDAD ── */
-  .papel-above-skyline { margin-top: 0; margin-bottom: -18vw; }
-  .papel-below-skyline { margin-top: -20vw; }
+  /* Z-index orden */
+  .skyline-wrap { position: relative; z-index: 1; }
+  .papel-above-skyline { position: relative; z-index: 2; margin-top: -45vw; margin-bottom: -24vw; }
+  .papel-below-skyline { position: relative; z-index: 3; margin-top: -24vw; }
+  .hero-inner { position: relative; z-index: 10; }
 
-  /* ── NOSOTRAS ──*/
-  #nosotras { margin-top: -40vw; }
-  .nosotras-content { margin-top: 0; padding-top: 6vw; padding-bottom: 6vw; }
+  /* Nosotras */
+  #nosotras { position: relative; z-index: 10; margin-top: -47vw; }
+  .nosotras-content { position: relative; z-index: 10; margin-top: 0; padding-top: 6vw; padding-bottom: 6vw; }
 
-  /* ── SERVICIOS ── */
-  #servicios { background: var(--hero-bg); margin-top: 0; }
+  /* Servicios */
+  #servicios { position: relative; z-index: 10; background: transparent; margin-top: 0; }
   .servicios-content { padding-top: 5rem; padding-bottom: 3rem; }
+  .svc-tape-row { position: relative; z-index: 10; }
 
-  /* ── PAPEL AFTER SERVICIOS ── */
+  /* Papel después de servicios */
   .papel-after-svc { background: var(--hero-bg); margin-top: -6vw; max-height: 55vw; overflow: hidden; }
 
-  /* ── VIDEO ── */
+  /* Video */
   .video-wrap { display: block; position: relative; z-index: 10; margin-top: -15vw; }
 
-  /* ── FAQS ── */
+  /* FAQs */
   #faqs { background: var(--hero-bg); position: relative; z-index: 11; margin-top: 0; padding-top: 3rem; }
 }
