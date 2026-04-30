@@ -1,4 +1,4 @@
-// Mobile menu
+// MENÚ MOBILE
 const burger = document.getElementById('burgerBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 burger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
@@ -6,7 +6,7 @@ document.querySelectorAll('.mm-link').forEach(l =>
   l.addEventListener('click', () => mobileMenu.classList.remove('open'))
 );
 
-// Scroll reveal
+// REVEAL EN SCROLL
 const ro = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); }
@@ -14,7 +14,7 @@ const ro = new IntersectionObserver(entries => {
 }, { threshold: 0.06 });
 document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
 
-// Active nav highlight
+// HIGHLIGHT EN NAV
 const navObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -26,18 +26,25 @@ const navObs = new IntersectionObserver(entries => {
 }, { rootMargin: '-35% 0px -35% 0px' });
 document.querySelectorAll('section[id]').forEach(s => navObs.observe(s));
 
-// FAQ accordion
+// FAQ ACORDEÓN
 document.querySelectorAll('.faq-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    const item = btn.parentElement;
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-    btn.setAttribute('aria-expanded', !isOpen);
+    const item = btn.closest('.faq-item');
+    const body = item.querySelector('.faq-body');
+
+    // Wrap content in sizing div on first open (needed for grid animation)
+    if (!body.querySelector('.faq-inner')) {
+      const inner = document.createElement('div');
+      inner.className = 'faq-inner';
+      while (body.firstChild) inner.appendChild(body.firstChild);
+      body.appendChild(inner);
+    }
+
+    item.classList.toggle('open');
   });
 });
 
-// Form submit
+// FORM
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const btn = this.querySelector('.btn-enviar');
