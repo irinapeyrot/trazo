@@ -41,11 +41,11 @@ nav {
 .mobile-menu {
   display: none; position: fixed; inset: 0;
   background: var(--hero-bg); z-index: 199;
-  flex-direction: column; justify-content: center; align-items: center; gap: 2rem;
+  flex-direction: column; justify-content: center; align-items: center; gap: 0.8rem;
 }
 .mobile-menu.open { display: flex; }
 .mobile-menu a {
-  font-size: 2.2rem; font-weight: 700; letter-spacing: 0.1em;
+  font-size: 1.3rem; font-weight: 700; letter-spacing: 0.1em;
   color: var(--ink); text-decoration: none;
 }
 .mobile-menu a:hover { color: var(--teal); }
