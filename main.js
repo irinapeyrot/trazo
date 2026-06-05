@@ -215,7 +215,7 @@ const SERVICE_DATA = {
       '<Diseño de envases, cajas y bolsas a medida>',
       '<Etiquetas para productos y botellas>',
       '<Troqueles y estructura del empaque>',
-      '<Selección de materiales y acabados especiales>'
+      '<Selección de materiales y acabados especiales>',
       '<Diseño de fajas, stickers y detalles de unboxing>'
     ]
   },
