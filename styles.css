@@ -616,7 +616,7 @@ body::before {
    CART NAV BUTTON
 ════════════════════════════════════════════════════════════════ */
 .cart-nav-btn {
-  position: fixed; top: 0.9rem; right: 3.5rem; z-index: 1001;
+  position: fixed; top: 0.9rem; right: 1rem; z-index: 1001;
   background: transparent; border: none; cursor: pointer;
   color: var(--ink); display: flex; align-items: center; gap: 4px;
   padding: 4px 8px; transition: transform 0.2s ease, color 0.2s ease;
