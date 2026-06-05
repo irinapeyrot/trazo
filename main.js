@@ -527,3 +527,5 @@ function renderOrders() {
 }
  
 document.getElementById('closeOrdersModal').addEventListener('click', () => closeModal('ordersModal'));
+document.getElementById('navPedidosBtn').addEventListener('click', (e) => { e.preventDefault(); openModal('ordersModal'); renderOrders(); });
+document.getElementById('mobilePedidosBtn').addEventListener('click', (e) => { e.preventDefault(); openModal('ordersModal'); renderOrders(); });
