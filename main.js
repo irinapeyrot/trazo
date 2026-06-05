@@ -187,48 +187,48 @@ const SERVICE_DATA = {
   branding: {
     tag: 'Identidad Visual',
     title: 'Branding',
-    desc: '<Le damos vida, voz y personalidad a tu marca para que no sea una más del montón. No es solo un logo lindo; es armar toda la identidad visual y la estrategia para que tu negocio conecte de verdad con la gente, transmita tus valores y se plante con personalidad en el mercado.>',
+    desc: 'Le damos vida, voz y personalidad a tu marca para que no sea una más del montón. No es solo un logo lindo; es armar toda la identidad visual y la estrategia para que tu negocio conecte de verdad con la gente, transmita tus valores y se plante con personalidad en el mercado.',
     items: [
-      '<Estrategia de marca y ADN conceptual>',
-      '<Diseño de logotipo, isotipo y sistema visual>',
-      '<Paleta de color y universo tipográfico>',
-      '<Manual de identidad (la guía para no meter la pata)>',
-      '<Aplicaciones de marca (papelería, firmas, plantillas)>'
+      'Estrategia de marca y ADN conceptual',
+      'Diseño de logotipo, isotipo y sistema visual',
+      'Paleta de color y universo tipográfico',
+      'Manual de identidad (la guía para no meter la pata)',
+      'Aplicaciones de marca (papelería, firmas, plantillas)'
     ]
   },
   motion: {
     tag: 'Animación',
     title: 'Motion Graphics',
-    desc: '<Hoy todo el mundo scrollea a mil por hora. Con la animación logramos que tus mensajes cobren vida, retengan la atención y expliquen conceptos complejos de forma dinámica, divertida y súper visual.>',
+    desc: 'Hoy todo el mundo scrollea a mil por hora. Con la animación logramos que tus mensajes cobren vida, retengan la atención y expliquen conceptos complejos de forma dinámica, divertida y súper visual.',
     items: [
-      '<Animación de logotipos>',
-      '<Cortinas, transiciones y títulos animados>',
-      '<Contenido dinámico para redes>',
-      '<Gifs y stickers animados personalizados>'
+      'Animación de logotipos',
+      'Cortinas, transiciones y títulos animados',
+      'Contenido dinámico para redes',
+      'Gifs y stickers animados personalizados'
     ]
   },
   packaging: {
     tag: 'Diseño de Producto',
     title: 'Packaging',
-    desc: '<El diseño de empaque es el primer contacto real que el cliente tiene con tu producto. Hacemos que tu producto entre por los ojos antes de que lo saquen del empaque.>',
+    desc: 'El diseño de empaque es el primer contacto real que el cliente tiene con tu producto. Hacemos que tu producto entre por los ojos antes de que lo saquen del empaque.',
     items: [
-      '<Diseño de envases, cajas y bolsas a medida>',
-      '<Etiquetas para productos y botellas>',
-      '<Troqueles y estructura del empaque>',
-      '<Selección de materiales y acabados especiales>',
-      '<Diseño de fajas, stickers y detalles de unboxing>'
+      'Diseño de envases, cajas y bolsas a medida',
+      'Etiquetas para productos y botellas',
+      'Troqueles y estructura del empaque',
+      'Selección de materiales y acabados especiales',
+      'Diseño de fajas, stickers y detalles de unboxing'
     ]
   },
   web: {
     tag: 'Digital',
     title: 'Diseño Web & UX/UI',
-    desc: '<Diseñamos experiencias digitales pensadas para el usuario. Páginas web e interfaces que son intuitivas, cargan rápido, se ven increíbles en el celular y, lo más importante, guían al cliente para que termine comprando o contactándote.>',
+    desc: 'Diseñamos experiencias digitales pensadas para el usuario. Páginas web e interfaces que son intuitivas, cargan rápido, se ven increíbles en el celular y, lo más importante, guían al cliente para que termine comprando o contactándote.',
     items: [
-      '<Diseño de sitios web institucionales y porfolios>',
-      '<E-commerce y tiendas online a medida>',
-      '<Diseño de interfaces para aplicaciones (UI)>',
-      '<Investigación de usuario y arquitectura de información (UX)>'
-      '<Prototipado interactivo y diseño completamente responsive>'
+      'Diseño de sitios web institucionales y porfolios',
+      'E-commerce y tiendas online a medida',
+      'Diseño de interfaces para aplicaciones (UI)',
+      'Investigación de usuario y arquitectura de información (UX)'
+      'Prototipado interactivo y diseño completamente responsive'
     ]
   }
 };
