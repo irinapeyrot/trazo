@@ -700,7 +700,7 @@ body::before {
    MERCHANDISING SECTION
 ════════════════════════════════════════════════════════════════ */
 #merchandising {
-  padding: clamp(3rem,8vw,6rem) clamp(1.5rem,6vw,5rem);
+  padding: clamp(3rem,8vw,6rem) clamp(1.5rem,6vw,5rem) clamp(4rem,10vw,8rem);
   background: var(--hero-bg);
   position: relative;
 }
