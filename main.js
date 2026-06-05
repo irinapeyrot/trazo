@@ -227,7 +227,7 @@ const SERVICE_DATA = {
       'Diseño de sitios web institucionales y porfolios',
       'E-commerce y tiendas online a medida',
       'Diseño de interfaces para aplicaciones (UI)',
-      'Investigación de usuario y arquitectura de información (UX)'
+      'Investigación de usuario y arquitectura de información (UX)',
       'Prototipado interactivo y diseño completamente responsive'
     ]
   }
