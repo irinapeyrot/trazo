@@ -1104,13 +1104,12 @@ body::before {
 .proyecto-card {
   position: relative;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 97% 100%, 93% 95%, 89% 100%, 84% 95%, 79% 100%, 74% 95%, 69% 100%, 64% 95%, 58% 100%, 52% 95%, 46% 100%, 40% 95%, 34% 100%, 28% 95%, 22% 100%, 16% 95%, 10% 100%, 5% 95%, 2% 100%, 0 95%);
   transition: transform 0.3s cubic-bezier(0.22,1,0.36,1);
 }
-.proyecto-card:hover { transform: translateY(-5px) rotate(-0.3deg); }
+.proyecto-card:hover { transform: translateY(-5px); }
 .proyecto-video {
   width: 100%;
-  aspect-ratio: 9/16;
+  aspect-ratio: 16/9;
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
