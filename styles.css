@@ -305,7 +305,7 @@ z-index: 2;
     flex: 1 !important;
     width: auto !important;
   }
-  .svc-desc { display: none !important; }
+  
   .svc-plus {
     margin: 0 0 0 auto !important;
     padding: 0 !important;
@@ -1253,7 +1253,7 @@ body::before {
     position: relative !important;
     z-index: 1 !important;
   }
-  .svc-desc { display: none !important; }
+  
   .svc-plus {
     font-size: 1.4rem !important;
     margin: 0 !important;
