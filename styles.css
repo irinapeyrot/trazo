@@ -1192,8 +1192,6 @@ body::before {
   text-transform: uppercase;
 }
 @media (max-width: 640px) {
-
-  /* SERVICIOS — una por línea, horizontal */
   .servicios-grid {
     display: flex !important;
     flex-direction: column !important;
@@ -1230,8 +1228,6 @@ body::before {
     z-index: 1 !important;
   }
   .svc-ver-mas { display: none !important; }
-
-  /* PROYECTOS — 2 por fila */
   .proyectos-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
@@ -1239,5 +1235,4 @@ body::before {
   .proyecto-below { padding: 0.4rem 0.6rem 0.5rem !important; }
   .proyecto-below .proyecto-nombre { font-size: 0.7rem !important; }
   .proyecto-below .proyecto-tools { display: none !important; }
-
 }
