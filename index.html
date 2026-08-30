@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trazo │ Estudio de diseño</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><g transform='translate(100,100)'><polygon points='-16,-28 16,-28 26,-95 -26,-95' transform='rotate(0)' fill='%2300B5B0'/><polygon points='-16,-28 16,-28 26,-95 -26,-95' transform='rotate(72)' fill='%2300B5B0'/><polygon points='-16,-28 16,-28 26,-95 -26,-95' transform='rotate(144)' fill='%2300B5B0'/><polygon points='-16,-28 16,-28 26,-95 -26,-95' transform='rotate(216)' fill='%2300B5B0'/><polygon points='-16,-28 16,-28 26,-95 -26,-95' transform='rotate(288)' fill='%2300B5B0'/><circle r='30' fill='%2300B5B0'/></g></svg>">
+</head>
+<body>
+
+<nav>
+  <button class="burger" id="burgerBtn">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+  <ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#nosotras">Nosotras</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#merchandising">Merch</a></li>
+    <li><a href="#faqs">FAQs</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#" id="navPedidosBtn">Mis pedidos</a></li>
+</ul>
+  <button class="cart-nav-btn" id="cartNavBtn" aria-label="Ver carrito">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    <span class="cart-count" id="cartCount">0</span>
+</button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#inicio" class="mm-link">Inicio</a>
+  <a href="#nosotras" class="mm-link">Nosotras</a>
+  <a href="#servicios" class="mm-link">Servicios</a>
+  <a href="#merchandising" class="mm-link">Merch</a>
+  <a href="#faqs" class="mm-link">FAQs</a>
+  <a href="#contacto" class="mm-link">Contacto</a>
+  <a href="#" class="mm-link" id="mobilePedidosBtn">Mis pedidos</a>
+  <a href="#" class="mm-link" id="mobileCartBtn">Carrito</a>
+</div>
+
+<!-- HERO -->
+<section id="inicio">
+  <div class="hero-inner">
+
+    <div class="logo-wrap reveal">
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1850.77 624.86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-3 {
+        fill: #1d1d1b;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" y="0" width="1850.77" height="624.86"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" y="0" width="1850.77" height="624.86"/>
+    </clipPath>
+  </defs>
+  <g id="Ilustración_9" data-name="Ilustración 9">
+    <g class="cls-4">
+      <g class="cls-2">
+        <path class="cls-3" d="M190.6,512.63c-8.16-54.07-16.34-108.13-24.54-162.19l-13.36-97.98c-40.26,5.85-80.45,12.03-120.61,18.54C20.27,209.09,10.36,146.76,0,84.59,217.15,46.8,435.71,20.55,655.63,5.82c3.29,64.53,6.57,129.06,9.84,193.6-11.07.83-16.6,1.25-27.67,2.13-107.02,6.02-213.75,14.72-320.33,26.11,4.12,43.76,8.26,87.52,12.41,131.27,6.87,62.68,14.41,125.27,22.57,187.8,2.17,14.29,3.25,21.44,5.4,35.73-15.28,2.58-22.92,3.89-38.18,6.58-38.85,5.34-77.44,12.4-116.28,17.69-5.52-31.13-8.56-62.79-12.78-94.1"/>
+        <path class="cls-3" d="M399.46,573.39c-3.33-40.32-6.64-80.64-9.95-120.96-2.39-24.25-3.58-36.37-5.97-60.62-2.26-24.67-4.95-49.54-8.81-73.95-3.42-21.58-6.08-43.52-10.05-65.08,40.19-11.76,80.15-18.01,121.21-16.56,43.62,1.54,82.99,26.75,85.16,74.7.09,1.35.13,2.03.22,3.38,2.52,36.44-12.33,69.29-37.84,94.36,27.52,46.21,44.02,98.05,72.29,143.97-26.84,3.55-53.93,5.49-80.9,7.91-15.66-27.89-30.54-56.94-49.38-82.9-1.11-1.36-3.32-4.09-4.39-4.97-.17,3.89,1.36,28.03,2.1,36.7,3.37,39.99,8.14,56.08,8.38,58.97-27.36,1.61-54.73,3.23-82.08,5.05M449.72,315.82c1.23,14.45,1.85,21.68,3.08,36.13.73,6.15,1.09,9.22,1.82,15.37,1.97-.65,27.02-3.7,25.16-26.83-.06-.77-.09-1.16-.15-1.93-2.13-26.5-29.82-27.61-30.83-27.52.37,1.91.55,2.86.92,4.77"/>
+        <path class="cls-3" d="M858.41,491.96c-4.58-24.27-9.22-48.54-13.92-72.79-25.53,1.18-51.16,1.95-76.63,4.11-5.91,27.38-11.73,54.79-17.45,82.21-3.55,17.71-5.3,26.56-8.78,44.28-.63.02-.95.03-1.58.06-41.26,1.32-82.61,3.45-123.9,3.47,4.9-24.92,9.86-49.83,14.87-74.73,8.11-39.57,16.25-79.08,25.41-118.42,19.15-80.03,38.85-159.75,63.27-238.36,11.5-35.79,23.18-71.52,35.13-107.17,59.48-3.21,118.96-5.66,178.51-7.37,8.06,40.36,14.95,81.12,21.24,121.68,6.33,40.91,11.48,82.28,17.01,123.3,7.51,55.73,14.54,111.78,23.9,167.38,8.17,45.77,16.1,91.58,23.84,137.42-49.42-2.15-98.83-3.74-148.29-4.79-5-24.12-7.53-36.17-12.64-60.28M840.05,295.22c-6.79-26.05-13.63-52.09-20.53-78.12-8.41,26.31-16.7,52.66-24.87,79.05,18.16-.44,27.24-.63,45.4-.93"/>
+        <path class="cls-3" d="M1055.95,557.98c-12.58-71.18-23.09-142.74-34.22-214.16,99.24-49.27,199.75-95.59,301.65-139.1-99.28-6.71-198.74-10.86-298.23-12.45.19-64.06-3.33-128.28-5.96-192.27,167.48,2.43,334.68,12.29,501.4,28.33-6.12,61.96-12.24,123.92-18.36,185.88-105.18,55.03-208.47,113.2-309.99,174.73,205.21,6.66,410.71,30.2,613.36,62.47-2.51,21.06,6.82-43.2-2.61,16.49-7.45,52.32-14.91,104.64-22.39,156.96-142.38-20.05-284.55-39.29-427.98-50.43-71.46-6.14-142.94-11.05-214.56-14.75-27.38-.92-54.75-.83-82.12-1.7"/>
+        <path class="cls-3" d="M1538.63,253.32c1.27-11.86,2.86-20.59,3.13-23.17,2.78-26.34,4.43-47.65,6.21-65.15,3.26-32.08,10-67.51,31.57-92.2,29.76-34.05,90.33-44.36,132.06-38,78.28,11.94,143.26,55.71,138.97,143.94-.21,5.75-3.24,24.74-6.87,47.81-5.2,33.06-10.28,66.58-18.43,99.1-22.27,79.15-86.59,96.52-161.74,86.29-85.75-11.68-134.02-73.62-124.89-158.62M1674.51,297.1c.54.07.81.11,1.34.18,30.35,2.81,38.15-37.66,40.92-60.03,1.31-7.58,1.97-11.37,3.28-18.95,3.11-22.46,16.13-81.46-20.44-86.58-27.3-3.82-34.17,15.51-36.44,33.55l-10.55,84c-.97,7.73-3.55,44.51,21.9,47.84"/>
+      </g>
+    </g>
+  </g>
+</svg>
+    </div>
+
+    <div class="tape-badge-row reveal" style="transition-delay:.1s">
+      <div class="tape-main"></div>
+      <div class="badge-circle">
+        <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+          <defs><path id="ct" d="M45,45 m-32,0 a32,32 0 1,1 64,0 a32,32 0 1,1 -64,0"/></defs>
+          <text font-family="'Space Grotesk',sans-serif" font-size="12" fill="#BLACK" letter-spacing="2" font-weight="700">
+            <textPath href="#ct">CREATIVAS RIOPLATENSES</textPath>
+          </text>
+          <line x1="42" y1="38" x2="48" y2="52" stroke="BLACK" stroke-width="1.5"/>
+          <line x1="39" y1="45" x2="51" y2="45" stroke="BLACK" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-text reveal" style="transition-delay:.2s">
+  <div class="oval-outline"></div>
+  <p>Diseñamos el encuentro.</p>
+  <p>Somos cinco mujeres formadas en la cultura del Río de la Plata. Trabajamos por edición: sacamos lo que sobra para que lo que queda tenga dónde resonar.</p>
+</div>
+
+  </div>
+
+  <div class="papel-wrap papel-above-skyline">
+    <img src="papel1.svg" alt="">
+  </div>
+
+  <div class="skyline-wrap">
+    <div class="cityscape">
+      <img src="skyline.svg" alt="Skyline de Montevideo y Buenos Aires">
+    </div>
+  </div>
+
+  <div class="papel-wrap papel-below-skyline">
+    <img src="papel1.svg" alt="">
+  </div>
+
+</section>
+
+<!-- NOSOTRAS -->
+<section id="nosotras">
+    <div class="nosotras-content">
+    <span class="section-heading reveal">Nosotras</span>
+    <p class="nosotras-body reveal" style="transition-delay:.1s">Trabajamos entre márgenes y corrientes, dejando que el silencio y la forma dialoguen en cada proyecto. En nuestra práctica, el espacio libre no es ausencia, sino potencial. Cada trazo incompleto invita a continuar la línea con la mente. Diseñamos con conciencia, porque creemos que lo que se insinúa también comunica.</p>
+    <span class="teal-asterisk reveal" style="transition-delay:.2s">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g transform="translate(100,100)">
+          <polygon points="-16,-28 16,-28 26,-95 -26,-95" transform="rotate(0)" fill="#00B5B0"/>
+          <polygon points="-16,-28 16,-28 26,-95 -26,-95" transform="rotate(72)" fill="#00B5B0"/>
+          <polygon points="-16,-28 16,-28 26,-95 -26,-95" transform="rotate(144)" fill="#00B5B0"/>
+          <polygon points="-16,-28 16,-28 26,-95 -26,-95" transform="rotate(216)" fill="#00B5B0"/>
+          <polygon points="-16,-28 16,-28 26,-95 -26,-95" transform="rotate(288)" fill="#00B5B0"/>
+          <circle r="30" fill="#00B5B0"/>
+        </g>
+      </svg>
+    </span>
+    <p class="nosotras-body reveal" style="transition-delay:.3s">El Río de la Plata no nace en un punto: nace de una confluencia. Dos ríos que vienen de lejos llegan al mismo espacio y desde ahí son uno solo, con nombre nuevo. Trazo funciona igual — reunimos perspectivas, territorios e ideas distintas para construir algo que tiene más sentido que sus partes.</p>
+    <p class="nosotras-body reveal" style="transition-delay:.4s;margin-top:0.8rem;">No hacemos que tu marca hable más fuerte. Hacemos que se escuche mejor.</p> 
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="svc-scribbles">
+    <svg width="100%" height="100%" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <path d="M80,120 Q160,70 95,165 Q40,240 145,205" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.13"/>
+      <path d="M60,310 L95,272 L128,308 L162,268 L195,305" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+      <path d="M1050,90 Q1130,150 1062,195 Q1005,235 1092,275" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.12"/>
+      <path d="M1030,340 L1062,308 L1094,342 L1126,304 L1155,338" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+    </svg>
+  </div>
+  <div class="svc-tape-row">
+    <div class="tape tape-svc"></div>
+    <div class="tape tape-svc-w"></div>
+    <div class="tape tape-svc" style="opacity:0.35;transform:rotate(2deg);"></div>
+  </div>
+  <div class="servicios-content">
+    <span class="section-heading reveal">Servicios</span>
+    <div class="servicios-grid">
+      <div class="servicio-item reveal" style="transition-delay:.05s" data-service="branding">
+  <div class="brush-bg"></div>
+  <span class="servicio-name">Branding</span>
+  <p class="svc-desc">Definimos qué dice tu marca y qué calla</p>
+  <span class="svc-plus">+</span>
+  <span class="svc-ver-mas">Ver más →</span>
+</div>
+
+<div class="servicio-item reveal" style="transition-delay:.15s" data-service="motion">
+  <div class="brush-bg"></div>
+  <span class="servicio-name">Motion Graphics</span>
+  <p class="svc-desc">Mensajes que se mueven con dirección</p>
+  <span class="svc-plus">+</span>
+  <span class="svc-ver-mas">Ver más →</span>
+</div>
+
+<div class="servicio-item reveal" style="transition-delay:.25s" data-service="packaging">
+  <div class="brush-bg"></div>
+  <span class="servicio-name">Packaging</span>
+  <p class="svc-desc">El espacio donde el producto se encuentra con quien lo elige</p>
+  <span class="svc-plus">+</span>
+  <span class="svc-ver-mas">Ver más →</span>
+</div>
+
+<div class="servicio-item reveal" style="transition-delay:.35s" data-service="web">
+  <div class="brush-bg"></div>
+  <span class="servicio-name">Diseño Web &amp; UX/UI</span>
+  <p class="svc-desc">Interfaces que despejaron el ruido antes de que llegues</p>
+  <span class="svc-plus">+</span>
+  <span class="svc-ver-mas">Ver más →</span>
+</div>
+    </div>
+    </div>
+  <!-- GALERÍA DE PROYECTOS -->
+      <div class="proyectos-wrap">
+        <p class="proyectos-label reveal">Trabajos realizados</p>
+        <div class="proyectos-grid">
+
+  <div>
+    <div class="proyecto-card reveal" style="transition-delay:.05s">
+      <video class="proyecto-video" src="Servicio1.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="proyecto-below">
+      <span class="proyecto-tag">Branding</span>
+      <span class="proyecto-nombre">Proyecto Madero</span>
+      <span class="proyecto-tools">Illustrator · Photoshop · Indesign</span>
+    </div>
+  </div>
+
+  <div>
+    <div class="proyecto-card reveal" style="transition-delay:.12s">
+      <video class="proyecto-video" src="Servicio2.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="proyecto-below">
+      <span class="proyecto-tag">Diseño UX/UI</span>
+      <span class="proyecto-nombre">Proyecto Caballito</span>
+      <span class="proyecto-tools">Figma · HTML · CSS</span>
+    </div>
+  </div>
+
+  <div>
+    <div class="proyecto-card reveal" style="transition-delay:.19s">
+      <video class="proyecto-video" src="Servicio3.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="proyecto-below">
+      <span class="proyecto-tag">Motion Graphics</span>
+      <span class="proyecto-nombre">Proyecto Colonia</span>
+      <span class="proyecto-tools">After Effects · Premiere</span>
+    </div>
+  </div>
+
+  <div>
+    <div class="proyecto-card reveal" style="transition-delay:.26s">
+      <video class="proyecto-video" src="Servicio4.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="proyecto-below">
+      <span class="proyecto-tag">Diseño Web</span>
+      <span class="proyecto-nombre">Proyecto Malvín</span>
+      <span class="proyecto-tools">Figma · Webflow · JS</span>
+    </div>
+  </div>
+</div>
+          </div>
+          </div>
+      </div>
+  </div>
+</section>
+  <div class="badge-mobile-only">
+  <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+    <defs><path id="ct2" d="M45,45 m-32,0 a32,32 0 1,1 64,0 a32,32 0 1,1 -64,0"/></defs>
+    <text font-family="'Space Grotesk',sans-serif" font-size="7.5" fill="#1A1A1A" letter-spacing="2" font-weight="700">
+      <textPath href="#ct2">CREATIVAS RIOPLATENSES </textPath>
+    </text>
+    <line x1="42" y1="38" x2="48" y2="52" stroke="#1A1A1A" stroke-width="1.5"/>
+    <line x1="39" y1="45" x2="51" y2="45" stroke="#1A1A1A" stroke-width="1.5"/>
+  </svg>
+  </div>
+  <div class="papel-wrap papel-after-svc reveal">
+    <img src="papel2.svg" alt="">
+  </div>
+  <div class="video-wrap">
+  <video autoplay muted loop playsinline>
+    <source src="somosTrazo.mp4" type="video/mp4">
+  </video>
+</div>
+  <!-- MERCHANDISING -->
+<section id="merchandising">
+  <div class="merch-inner">
+    <div class="merch-tape-row">
+      <div class="tape" style="width:clamp(50px,8vw,100px);transform:rotate(-2deg);"></div>
+      <div class="tape tape-dark" style="width:clamp(30px,5vw,55px);height:18px;transform:rotate(3deg);"></div>
+    </div>
+    <span class="section-heading reveal">Merchandising</span>
+    <p class="merch-subtitle reveal" style="transition-delay:.08s"><Trazá con nosotras></p>
+ 
+    <div class="merch-grid">
+ 
+      <div class="merch-card reveal" style="transition-delay:.05s" data-id="1"
+           data-name="Gorro"
+           data-price="15"
+           data-desc="El infaltable para bancar los trapos. Ya sea para taparte del solazo en verano, caretear un mal día de pelo o meterle alta facha a tu outfit, este gorro es un camino de ida."
+           data-img="Gorra.jpg">
+        <div class="merch-img-wrap">
+          <img src="Gorra.jpg" alt="Gorro">
+          <div class="merch-overlay"><span>Ver producto</span></div>
+        </div>
+        <div class="merch-card-info">
+          <span class="merch-card-name">Gorro</span>
+          <span class="merch-card-price">$15</span>
+        </div>
+      </div>
+ 
+      <div class="merch-card reveal" style="transition-delay:.12s" data-id="2"
+           data-name="Remera"
+           data-price="25"
+           data-desc="La que va con todo, literal. Una remera con toda la onda, suavecita y re aguantadora para el día a día o para salir a dar una vuelta."
+           data-img="Remera.jpg">
+        <div class="merch-img-wrap">
+          <img src="Remera.jpg" alt="Remera">
+          <div class="merch-overlay"><span>Ver producto</span></div>
+        </div>
+        <div class="merch-card-info">
+          <span class="merch-card-name">Remera</span>
+          <span class="merch-card-price">$25</span>
+        </div>
+      </div>
+ 
+      <div class="merch-card reveal" style="transition-delay:.19s" data-id="3"
+           data-name="Llavero"
+           data-price="10"
+           data-desc="El típico salvavidas para los despistados de siempre. No solo te salva de estar media hora buscando las llaves en el fondo de la mochila, sino que le mete alto estilo."
+           data-img="Llavero.jpg">
+        <div class="merch-img-wrap">
+          <img src="Llavero.jpg" alt="Llavero">
+          <div class="merch-overlay"><span>Ver producto</span></div>
+        </div>
+        <div class="merch-card-info">
+          <span class="merch-card-name">Llavero</span>
+          <span class="merch-card-price">$10</span>
+        </div>
+      </div>
+ 
+      <div class="merch-card reveal" style="transition-delay:.26s" data-id="4"
+           data-name="Pins"
+           data-price="5"
+           data-desc="Mini joyitas para tunear lo que venga: la mochi, la campera de jean o el gorrito."
+           data-img="Pins.jpg">
+        <div class="merch-img-wrap">
+          <img src="Pins.jpg" alt="Pins">
+          <div class="merch-overlay"><span>Ver producto</span></div>
+        </div>
+        <div class="merch-card-info">
+          <span class="merch-card-name">Pins</span>
+          <span class="merch-card-price">$5</span>
+        </div>
+      </div>
+      <div class="merch-card reveal" style="transition-delay:.40s" data-id="6"
+           data-name="Totebag"
+           data-price="20"
+           data-desc="La clásica bolsa de tela que te salva la vida. Entra el cuaderno, la compu, el buzo por si refresca y los mandados del súper."
+           data-img="Totebag.png">
+        <div class="merch-img-wrap">
+          <img src="Totebag.png" alt="Totebag">
+          <div class="merch-overlay"><span>Ver producto</span></div>
+        </div>
+        <div class="merch-card-info">
+          <span class="merch-card-name">Totebag</span>
+          <span class="merch-card-price">$20</span>
+        </div>
+      </div>
+ 
+    </div><!-- /merch-grid -->
+  </div><!-- /merch-inner -->
+</section>
+ 
+<!-- ═══════════════════════════════════════════
+     MODAL: DETALLE DE PRODUCTO
+════════════════════════════════════════════ -->
+<div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-label="Detalle de producto">
+  <div class="modal-box product-modal-box">
+    <button class="modal-close" id="closeProductModal" aria-label="Cerrar">✕</button>
+    <div class="product-modal-inner">
+      <div class="product-modal-img-wrap">
+        <div class="product-modal-img" id="modalProductImg"></div>
+      </div>
+      <div class="product-modal-details">
+        <h2 class="product-modal-name" id="modalProductName"></h2>
+        <p class="product-modal-desc" id="modalProductDesc"></p>
+        <p class="product-modal-price" id="modalProductPrice"></p>
+        <div class="product-qty-row">
+          <button class="qty-btn" id="qtyMinus" aria-label="Menos">−</button>
+          <span class="qty-display" id="qtyDisplay">1</span>
+          <button class="qty-btn" id="qtyPlus" aria-label="Más">+</button>
+        </div>
+        <button class="btn-add-cart" id="btnAddToCart">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- ═══════════════════════════════════════════
+     MODAL: CARRITO
+════════════════════════════════════════════ -->
+<div class="modal-overlay" id="cartModal" role="dialog" aria-modal="true" aria-label="Carrito">
+  <div class="modal-box cart-modal-box">
+    <button class="modal-close" id="closeCartModal" aria-label="Cerrar">✕</button>
+    <h2 class="modal-title">Tu carrito</h2>
+    <div class="cart-items-list" id="cartItemsList">
+      <p class="cart-empty-msg">Tu carrito está vacío.</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn-checkout" id="btnCheckout">Ir al checkout →</button>
+      <button class="btn-orders-link" id="btnViewOrders">Ver mis pedidos</button>
+    </div>
+  </div>
+</div>
+ 
+<!-- ═══════════════════════════════════════════
+     MODAL: CHECKOUT — 3 PASOS
+════════════════════════════════════════════ -->
+<div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Checkout">
+  <div class="modal-box checkout-modal-box">
+    <button class="modal-close" id="closeCheckoutModal" aria-label="Cerrar">✕</button>
+ 
+    <!-- Steps indicator -->
+    <div class="checkout-steps">
+      <div class="checkout-step active" data-step="1"><span>1</span> Datos</div>
+      <div class="checkout-step-divider"></div>
+      <div class="checkout-step" data-step="2"><span>2</span> Pago</div>
+      <div class="checkout-step-divider"></div>
+      <div class="checkout-step" data-step="3"><span>3</span> Confirmación</div>
+    </div>
+ 
+    <!-- PASO 1: Datos del cliente -->
+    <div class="checkout-pane" id="checkoutPane1">
+      <h2 class="modal-title">Datos de envío</h2>
+      <form id="checkoutForm1" novalidate>
+        <div class="checkout-field-row">
+          <div class="checkout-field">
+            <label>Nombre completo</label>
+            <input type="text" id="chkNombre" placeholder="<Acá tu nombre>" required>
+          </div>
+          <div class="checkout-field">
+            <label>Email</label>
+            <input type="email" id="chkEmail" placeholder="<trazo@gmail.com>" required>
+          </div>
+        </div>
+        <div class="checkout-field">
+          <label>Dirección</label>
+          <input type="text" id="chkDireccion" placeholder="<Calle 123, Piso 4>" required>
+        </div>
+        <div class="checkout-field-row">
+          <div class="checkout-field">
+            <label>Ciudad</label>
+            <input type="text" id="chkCiudad" placeholder="<Montevideo>" required>
+          </div>
+          <div class="checkout-field">
+            <label>País</label>
+            <input type="text" id="chkPais" placeholder="<Uruguay>" required>
+          </div>
+        </div>
+        <div class="checkout-order-summary" id="checkoutOrderSummary"></div>
+        <button type="submit" class="btn-checkout-next">Continuar al pago →</button>
+      </form>
+    </div>
+ 
+    <!-- PASO 2: Datos de pago -->
+    <div class="checkout-pane" id="checkoutPane2" style="display:none">
+      <h2 class="modal-title">Información de pago</h2>
+      <form id="checkoutForm2" novalidate>
+        <div class="checkout-field">
+          <label>Número de tarjeta</label>
+          <input type="text" id="chkCard" placeholder="1234 5678 9012 3456" maxlength="19" required>
+        </div>
+        <div class="checkout-field-row">
+          <div class="checkout-field">
+            <label>Vencimiento</label>
+            <input type="text" id="chkExp" placeholder="MM/AA" maxlength="5" required>
+          </div>
+          <div class="checkout-field">
+            <label>CVV</label>
+            <input type="text" id="chkCvv" placeholder="123" maxlength="4" required>
+          </div>
+        </div>
+        <div class="checkout-field">
+          <label>Nombre en tarjeta</label>
+          <input type="text" id="chkCardName" placeholder="<Fijate que coincida con el documento>" required>
+        </div>
+        <div class="checkout-total-preview" id="checkoutTotalPreview"></div>
+        <div class="checkout-btn-row">
+          <button type="button" class="btn-checkout-back" id="checkoutBack1">← Volver</button>
+          <button type="submit" class="btn-checkout-next">Confirmar pedido →</button>
+        </div>
+      </form>
+    </div>
+ 
+    <!-- PASO 3: Confirmación -->
+    <div class="checkout-pane" id="checkoutPane3" style="display:none">
+      <div class="order-confirm-wrap">
+        <div class="order-confirm-icon">✓</div>
+        <h2 class="modal-title">¡Pedido confirmado!</h2>
+        <p class="order-confirm-msg" id="orderConfirmMsg"></p>
+        <p class="order-confirm-sub">Te enviamos los detalles a tu email. Podés hacerle seguimiento en "Mis pedidos".</p>
+        <button class="btn-checkout-next" id="btnGoToOrders">Ver mis pedidos</button>
+        <button class="btn-checkout-back" id="btnContinueShopping">Seguir comprando</button>
+      </div>
+    </div>
+ 
+  </div>
+</div>
+ 
+<!-- ═══════════════════════════════════════════
+     MODAL: MIS PEDIDOS
+════════════════════════════════════════════ -->
+<div class="modal-overlay" id="ordersModal" role="dialog" aria-modal="true" aria-label="Mis pedidos">
+  <div class="modal-box orders-modal-box">
+    <button class="modal-close" id="closeOrdersModal" aria-label="Cerrar">✕</button>
+    <h2 class="modal-title">Mis pedidos</h2>
+    <div id="ordersList" class="orders-list"></div>
+  </div>
+</div>
+ 
+<!-- ═══════════════════════════════════════════
+     MODAL: SERVICIO DETALLE
+════════════════════════════════════════════ -->
+<div class="modal-overlay" id="serviceModal" role="dialog" aria-modal="true" aria-label="Detalle de servicio">
+  <div class="modal-box service-modal-box">
+    <button class="modal-close" id="closeServiceModal" aria-label="Cerrar">✕</button>
+    <div class="service-modal-tag" id="serviceModalTag"></div>
+    <h2 class="service-modal-title" id="serviceModalTitle"></h2>
+    <p class="service-modal-desc" id="serviceModalDesc"></p>
+    <ul class="service-modal-list" id="serviceModalList"></ul>
+    <a href="#contacto" class="btn-service-cta" id="serviceModalCta">Consultar →</a>
+  </div>
+</div>
+<!-- FAQS -->
+<section id="faqs">
+  <div class="faqs-inner">
+    <div class="faqs-tape-row reveal">
+      <div class="tape" style="width:clamp(50px,8vw,100px);transform:rotate(-3deg);"></div>
+      <div class="tape tape-dark" style="width:clamp(30px,5vw,55px);height:18px;transform:rotate(2deg);"></div>
+    </div>
+    <span class="section-heading reveal">FAQs</span>
+    <div class="faq-item reveal" style="transition-delay:.05s">
+      <button class="faq-btn" aria-expanded="false">¿Cómo laburan si están en distintos países?<span class="faq-icon"></span></button>
+      <div class="faq-body">Re bien. Estamos repartidas en el mundo pero mega conectadas en la diaria. Al final del día, el Río de la Plata nos une más de lo que nos separa.</div>
+    </div>
+    <div class="faq-item reveal" style="transition-delay:.1s">
+      <button class="faq-btn" aria-expanded="false">¿Qué me entregan con el Branding?<span class="faq-icon"></span></button>
+      <div class="faq-body">No te damos solo un logo, te armamos toda la identidad. Eso incluye los colores, las fuentes, cómo usar las imágenes y todas las piezas que tu marca necesite para tener personalidad propia y no ser una más del montón.</div>
+    </div>
+    <div class="faq-item reveal" style="transition-delay:.15s">
+      <button class="faq-btn" aria-expanded="false">¿Hacen diseño web y videos también?<span class="faq-icon"></span></button>
+      <div class="faq-body">Sí, de una. Hacemos desde sitios web copados hasta Motion Graphics (videos animados). La idea es que todo lo que hagas con nosotras mantenga la misma estética y no parezca un menjunje de estilos.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="contacto-inner">
+    <span class="section-heading reveal">Contacto</span>
+    <div class="contacto-grid">
+      <div>
+        <form id="contactForm" validate>
+          <div class="form-group reveal" style="transition-delay:.1s"><input type="text" placeholder="Nombre" name="nombre" required></div>
+          <div class="form-group reveal" style="transition-delay:.2s"><input type="email" placeholder="Mail" name="mail" required></div>
+          <div class="form-group reveal" style="transition-delay:.3s"><textarea placeholder="Mensaje" name="mensaje" required></textarea></div>
+          <div class="reveal" style="transition-delay:.4s"><button type="submit" class="btn-enviar">Enviar</button></div>
+        </form>
+      </div>
+      <div class="map-wrap reveal" style="transition-delay:.25s">
+        <div class="contact-tape-row">
+          <div class="tape" style="width:clamp(50px,8vw,100px);transform:rotate(-2deg);"></div>
+          <div class="tape tape-dark" style="width:clamp(30px,5vw,55px);height:18px;transform:rotate(3deg);"></div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986624.3486441964!2d-57.9337402906176!3d-34.90227963580537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81d02aabae01%3A0x1ec5f453d7843861!2sR%C3%ADo%20de%20la%20Plata!5e0!3m2!1ses-419!2suy!4v1776478725469!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="map-caption">Río de la Plata — entre Buenos Aires y Montevideo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Estudio Trazo 2026</p>
+  <p>Nahir Alí * Luciana Costa * Clara Muhs * Juliana Pereyra * Irina Peyrot</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
